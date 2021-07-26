@@ -18,7 +18,7 @@ Foi aprendido sobre:
 * Encapsulamento
 * Proposta de atributos privados
 
-A proposta de se usar `#` para atributos privados já foi feita há anos e já está bem avançada, com o Node.js já a implementando, mas a linguagem em si ainda não a adotou. Ou seja, não deve ser utilizada em produção, e a convenção atualmente feita é para se utilizar `_`. Isso não torna os atributos e métodos privados de verdade, mas os desenvolvedores saberão que não podem ser modificados.
+A [proposta](https://github.com/tc39/proposal-class-fields#private-fields) de se usar `#` para atributos privados já foi feita há anos e já está bem avançada, com o Node.js já a implementando, mas a linguagem em si ainda não a adotou. Ou seja, não deve ser utilizada em produção, e a convenção atualmente feita é para se utilizar `_`. Isso não torna os atributos e métodos privados de verdade, mas os desenvolvedores saberão que não podem ser modificados.
 
 * `return` e *early return*
 
