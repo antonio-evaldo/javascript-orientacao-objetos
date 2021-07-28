@@ -40,3 +40,16 @@ O código tem potencial para se tornar bastante reaproveitável e legível, quan
 * Alterando dinamicamente um objeto
 
 No JavaScript, tipos que não são primitivos guardam na variável um valor da referência para, por exemplo, o objeto. Por isso que quando passamos a instância de um objeto como parâmetro de uma métodos, podemos nos aproveitar de todas as informações da instância dentro da declaração do método, alterando dinamicamente a instância do objeto.
+
+## Módulo 4
+
+Foi aprendido sobre:
+
+* Diferenças entre `null` e `undefined`
+* Aprofundando conhecimentos de referências a um espaço de memória
+* Get e Set
+
+[get](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/get) e [set](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/set) são acessores muito poderosos da linguagem, que permitem, por exemplo, que apliquemos **regras de proteção** ao atribuir um novo valor a uma propriedade de um objeto (com `set`) ou que simplesmente proteja a propriedade de ser acessada (ao propositalmente não ter um `get`). Esses acessores possuem sintaxe semelhante à das funções, com a diferença que não precisa usar parênteses ao "chamá-los", e no caso do `set`, o parâmetro que ele recebe é o novo valor que queremos atribuir.
+
+* Melhor encapsulamento da classe
+* Protegendo atributos sensíveis

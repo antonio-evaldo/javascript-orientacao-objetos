@@ -2,11 +2,10 @@ import { Cliente } from "./Cliente.js";
 import { ContaCorrente } from "./ContaCorrente.js"
 
 const cliente1 = new Cliente();
-const cliente2 = new Cliente();
-
 cliente1.nome = "Ricardo";
 cliente1.cpf = 11122233309;
 
+const cliente2 = new Cliente();
 cliente2.nome = "Alice";
 cliente2.cpf = 88822233309;
 
@@ -22,5 +21,4 @@ conta2.agencia = 102;
 
 contaCorrenteRicardo.transferir(200, conta2);
 
-console.log(contaCorrenteRicardo);
-console.log(conta2);
+console.log(conta2.saldo);
