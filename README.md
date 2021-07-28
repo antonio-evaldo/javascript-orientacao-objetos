@@ -53,3 +53,44 @@ Foi aprendido sobre:
 
 * Melhor encapsulamento da classe
 * Protegendo atributos sensíveis
+
+Por exemplo, ao associar um cliente a uma conta, sem os acessores, podemos atribuir qualquer valor a `Conta.cliente`. Então na classe `Conta`, devemos ter a propriedade `_cliente`, a qual não deve ser manipulada diretamente no código, mas podemos atribuir um cliente a ela através do setter `cliente`. E a esse setter só podemos atribuir uma variável do tipo `Cliente`, então na classe `Conta` devemos ter:
+
+```js
+set cliente(novoValor) {
+    if (novoValor instanceof Cliente) {
+        this._cliente = novoValor;
+    }
+}
+```
+
+E assim podemos executar:
+
+```js
+const conta1 = new ContaCorrente();
+const cliente1 = new Cliente();
+conta1.cliente = cliente1;  // cliente1 será o parâmetro "novoValor" no setter da classe Conta!
+```
+
+Da mesma forma, nosso código permite que acessemos o cliente, se tivermos um getter `cliente`:
+
+```js
+get cliente() {
+    return this._cliente;
+}
+```
+
+E podemos executar:
+
+```js
+console.log(conta1.cliente) // Diferente de funções, não é necessário usar parênteses ao utilizar os acessores.
+```
+
+## Módulo 5
+
+Foi aprendido sobre:
+
+* Construtores
+* Encapsulamento
+* Atributos "readonly"
+* Atributos estáticos
